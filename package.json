@@ -1,0 +1,33 @@
+{
+  "name": "anlab_chatserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjmModJM/anlab_ChatServer/issues"
+  },
+  "homepage": "https://github.com/anjmModJM/anlab_ChatServer#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jQuery": "^1.7.4",
+    "jsdom": "^16.4.0",
+    "mongoose": "^5.11.19",
+    "mongoose-session": "0.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "pug": "^3.0.2",
+    "socket.io": "^3.1.2"
+  }
+}

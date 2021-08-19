@@ -1,0 +1,25 @@
+html
+	head
+		title index
+		link(rel='stylesheet', href='/css/index.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		script(src="/socket.io/socket.io.js")
+		script(src='/javascript/userSocket.js')
+	body
+		.temp-receive(style='display:none') no-match
+		.container
+			.no-match
+				a(href='/auth/logout') logout
+				span.help-title HOW TO START
+				span.help-body-line1 👈 1. Select Online friend! 👈
+				span.help-body-line2 2. GO CHAT!✉
+				span.help-info-dev Make by git@anjmModJM + preview,time,알림 + 프로필 기능 + 테마바꾸기
+			.messages
+			.profile
+				.avatar#user
+					p=nickname[0]
+				.user-info
+					p#name=nickname
+					p.id='@'+id
+					p.uid=id
+			ul.people

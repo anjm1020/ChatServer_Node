@@ -1,0 +1,21 @@
+html
+	head
+		title SIGNUP
+		link(rel='stylesheet',href='/css/signup.css')
+	body
+		#login_box
+			h1 SIGNUP
+			#login_ui
+				form(action='/auth/signup_process' method='post')
+					span=errMsg
+					p
+						input.ui(type="text" name="id" placeholder="type your id")
+					p
+						input.ui(type="text" name="nickname" placeholder="type your nickname")
+					p 
+						input.ui(type="password" name="password" placeholder="type your password")
+					p 
+						input.ui(type="password" name="verify_pwd" placeholder="type your password again")
+					p.submit
+						input#submit(type="submit" value="SIGNUP")
+				a(href="/auth/login") Login

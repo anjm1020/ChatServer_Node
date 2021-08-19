@@ -1,0 +1,17 @@
+html
+	head
+		title LOGIN
+		link(rel='stylesheet', href='/css/login.css')
+	body
+		#login_box
+			h1 LOGIN
+			#login_ui
+				form(action='/auth/login_process' method='post')
+					span=errMsg
+					p
+						input.ui(type="text" name="id" placeholder="type id")
+					p 
+						input.ui(type="password" name="password" placeholder="type password")
+					p.submit
+						input#submit(type="submit" value="LOGIN")
+					a(href='/auth/signup') sign up
